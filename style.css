@@ -36,7 +36,7 @@ h1  {font: normal 18pt Pegasus, Times}
        float: left;
        width: 105px;
        height: 24px;
-       background-image: url({{m}}/menu-block-background.jpg);
+       background-image: url(/media/menu-block-background.jpg);
        }
 #menu .menu-block .menu-text {
        padding: 3px 0px 5px 0px;
@@ -88,7 +88,7 @@ h1  {font: normal 18pt Pegasus, Times}
 
 
 #image-section {border: solid 1px white;}
-#image-section .images-home-header {padding: 10px 10px 15px 10px; background-image: url({{m}}/image-background.jpg);}
+#image-section .images-home-header {padding: 10px 10px 15px 10px; background-image: url(/media/image-background.jpg);}
 #image-section .images-home-header .image-spacer {text-align: center; float: left; width: 242px;}
 #image-section .images-home-header .image-spacer .image {}
 #image-section .images-home-header .image-div {}
