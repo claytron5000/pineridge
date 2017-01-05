@@ -1,0 +1,27 @@
+#FROM DRUPAL 5 2007.05.08
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  # If your site can be accessed both with and without the prefix www. you
+  # can use one of the following settings to force user to use only one option:
+  #
+  # If you want the site to be accessed WITH the www. only, adapt and
+  # uncomment the following:
+  #RewriteCond %{HTTP_HOST} ^pineridgeburner\.com$ [NC]
+  #RewriteRule .* http://www.pineridgeburner.com/ [L,R=301]
+  #
+  # If you want the site to be accessed only WITHOUT the www. prefix, adapt
+  # and uncomment the following:
+   RewriteCond %{HTTP_HOST} ^www\.pineridgeburner\.com$ [NC]
+   RewriteRule .* http://pineridgeburner.com/ [L,R=301]
+
+  # Rewrite current-style URLs of the form 'index.php?q=x'.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  #RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ i.php?i=$1 [L,QSA]
+</IfModule>
+
+# $Id: .htaccess,v 1.81 2007/01/09 09:27:10 dries Exp $
+
