@@ -120,10 +120,16 @@ h1  {font: normal 18pt Pegasus, Times}
 .span .center {width: 700px; margin: auto;}
 .sales-large {width: 100%;}
 .sales-large .image {float: left;}
-.sales-large .text {width: 300px; margin-left: auto; padding: 0px 0px 0px 20px;}
+/*.sales-large .text {width: 300px; margin-left: auto; padding: 0px 0px 0px 20px;}*/
 
 .sales-small {width: 100%;}
 .sales-small .image {float: left;}
-.sales-small .text {width: 450px; margin-left: auto; padding: 0px 0px 0px 20px;}
+.sales-small .text, .sales-large .text  { padding-left: 20px;}
 .sales-small .text .part-name {width: 120px; font-weight: bold; float: left;}
-.sales-small .text .part-description {width: 330px; float: left;}
+.sales-large .text .col1 {
+  float: left;
+  padding-right: 45px;
+}
+.sales-large .text .col2 {
+  float: left;
+}
