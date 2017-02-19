@@ -123,7 +123,7 @@ h1  {font: normal 18pt Pegasus, Times}
 /*.sales-large .text {width: 300px; margin-left: auto; padding: 0px 0px 0px 20px;}*/
 
 .sales-small {width: 100%;}
-.sales-small .image {float: left;}
+.sales-small .image {float: left; width: 32%;}
 .sales-small .text, .sales-large .text  { padding-left: 20px;}
 .sales-small .text .part-name {width: 120px; font-weight: bold; float: left;}
 .sales-large .text .col1 {
